@@ -23,7 +23,7 @@ app.get('/', (req, res) => {
     res.render('home')
 })
 app.get('/places', (req, res) => {
-    res.send('get home page!')
+    res.render('index')
 })
 app.post('/places', (req, res) => {
     res.send('post/create new place')
