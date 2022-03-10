@@ -1,5 +1,5 @@
 const React = require('react')
-const Def = require('/Users/devonteewell/Desktop/UNLV/RestRant/views/default.jsx')
+const Def = require('../default')
 
 
 function index (data) {
