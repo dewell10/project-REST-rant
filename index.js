@@ -9,7 +9,8 @@ const app = express()
 // delete => deletes 
 
 //EXPRESS SETTINGS 
-app.set("views", __dirname + "/views");
+app.set('view engine', 'jsx');
+app.engine('jsx', require('express-react-views').createEngine())
 //  app.set() assigns first argument
 
 
@@ -19,7 +20,7 @@ app.use('/places', require('./controllers/places'))
 
 //ROUTES
 app.get('/', (req, res) => {
-    res.send('Home Page!')
+    res.render('home')
 })
 app.get('/places', (req, res) => {
     res.send('get home page!')
