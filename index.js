@@ -31,7 +31,7 @@ app.post('/places', (req, res) => {
     res.send('post/create new place')
 })
 app.get('/places/new', (req, res) => {
-    res.send('get form page for creating a new place!')
+    res.render('places/new')
 })
 app.get('*', (req, res) => {
     res.render('error404')
