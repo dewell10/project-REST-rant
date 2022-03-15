@@ -19,14 +19,14 @@ function index (data) {
           Located in {place.city}, {place.state}
         </p>
       </div>
-    )
-  })
+    );
+  });
     return (
       <Def>
           <main>
-              <h1>PLACES INDEX PAGE</h1>
-              {placesFormatted}
-          </main>
+        <h1>PLACES INDEX PAGE</h1>
+        <div className='row'>{placesFormatted}</div>
+      </main>
       </Def>
   )
   }
